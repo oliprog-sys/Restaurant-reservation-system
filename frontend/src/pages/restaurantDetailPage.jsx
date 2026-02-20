@@ -22,6 +22,7 @@ function RestaurantDetailPage() {
         <p className="text-amber-200 text-m">
           Italian · $$ · Bole, Addis Ababa
         </p>
+        <p className="text-white text-m">Available tables · 23</p>
       </div>
 
       <p className="mt-4 p-4 font-light text-gray-700">
@@ -46,6 +47,8 @@ function RestaurantDetailPage() {
 
       {/*menu list*/}
       <MenuPreview />
+
+
     </div>
   );
 }
