@@ -1,4 +1,3 @@
-import CategoryFilter from "../components/homePageComp/categoryComp";
 import DiscoverSection from "../components/homePageComp/discoverComp";
 import Footer from "../components/homePageComp/footerComp";
 import Header from "../components/homePageComp/header";
