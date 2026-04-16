@@ -20,20 +20,20 @@ export default function ReserveTable() {
       <div className="grid grid-cols-3 gap-2">
         <input
           type="date"
-          className="border rounded-md p-2"
+          className="border rounded-md p-2 border-red-200"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
 
         <input
           type="time"
-          className="border rounded-md p-2"
+          className="border rounded-md p-2 border-red-200"
           value={time}
           onChange={(e) => setTime(e.target.value)}
         />
 
         <select
-          className="border rounded-md p-2"
+          className="border rounded-md p-2 border-red-200"
           value={guests}
           onChange={(e) => setGuests(Number(e.target.value))}
         >
@@ -48,8 +48,8 @@ export default function ReserveTable() {
       <div className="flex gap-2 mt-4">
         <button
           onClick={() => setTableType("indoor")}
-          className={`flex-1 p-2 rounded-md border ${
-            tableType === "indoor" ? "bg-black text-white" : "bg-white"
+          className={`flex-1 p-2 rounded-md  border ${
+            tableType === "indoor" ? "bg-green-500 font-bold text-white" : "bg-white border-red-200"
           }`}
         >
           Indoor
@@ -58,7 +58,7 @@ export default function ReserveTable() {
         <button
           onClick={() => setTableType("outdoor")}
           className={`flex-1 p-2 rounded-md border ${
-            tableType === "outdoor" ? "bg-black text-white" : "bg-white"
+            tableType === "outdoor" ? "bg-green-500 font-bold text-white" : "bg-white"
           }`}
         >
           Outdoor
@@ -76,7 +76,7 @@ export default function ReserveTable() {
       <button
         disabled={!available}
         onClick={handleReserve}
-        className="w-full mt-4 bg-black text-white py-3 rounded-lg disabled:bg-gray-400"
+        className="w-full mt-4 bg-green-500 font-bold text-black py-3 rounded-lg disabled:bg-gray-400"
       >
         Reserve Table
       </button>

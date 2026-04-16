@@ -1,4 +1,4 @@
-import CategoryFilter from "./categoryComp";
+import CategoryFilter from "./CategoryFilter";
 import { HiOutlineSearch } from "react-icons/hi";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdRestaurant } from "react-icons/io";

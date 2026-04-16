@@ -1,4 +1,4 @@
-import RestaurantCard from "./restaurantCardComp";
+import RestaurantCard from "./RestaurantCardComp";
 
 function DiscoverSection() {
   return (

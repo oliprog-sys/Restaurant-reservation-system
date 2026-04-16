@@ -1,4 +1,4 @@
-import { PopularCard } from "./poplarResCard";
+import { PopularCard } from "./PoplarResCard";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
 function Popular() {
